@@ -1,6 +1,10 @@
-﻿using CollectorsApp.BLL.Interfaces;
+﻿using AutoMapper;
+using CollectorsApp.BLL.DataTransferObjects;
+using CollectorsApp.BLL.Exceptions;
+using CollectorsApp.BLL.Interfaces;
 using CollectorsApp.DAL;
 using CollectorsApp.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,44 +16,56 @@ namespace CollectorsApp.BLL.Services
     public class CollectibleService : ICollectibleService
     {
         private readonly CollectorsAppDbContext _dbContext;
-        public CollectibleService(CollectorsAppDbContext dbContext)
+        private readonly IMapper _mapper;
+        public CollectibleService(CollectorsAppDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
+            _mapper = mapper;
         }
-        public IEnumerable<Collectible> GetCollectibles()
+        public async Task<IEnumerable<CollectibleDto>> GetCollectiblesAsync()
         {
-            return _dbContext.Collection.ToList();
+            var collectibles = await _dbContext.Collection.ToListAsync();
+
+            return _mapper.Map<IEnumerable<CollectibleDto>>(collectibles);
         }
-        public void AddCollectible(Collectible collectible)
+        public async Task AddCollectibleAsync(CollectibleDto collectible)
         {
-            _dbContext.Collection.Add(collectible);
-            _dbContext.SaveChanges();
+            var mappedCollectible = _mapper.Map<Collectible>(collectible);
+
+            await _dbContext.Collection.AddAsync(mappedCollectible);
+            await _dbContext.SaveChangesAsync();
         }
 
-        public Collectible GetCollectible(int id)
+        public async Task<CollectibleDto> GetCollectibleAsync(int id)
         {
-            return _dbContext.Collection.Where(w => w.Id == id).First();
+            var collectible = await _dbContext.Collection
+                .Where(w => w.Id == id)
+                .FirstOrDefaultAsync() ?? throw new EntityNotFoundException("Nincs ilyen elem!");
+
+            return _mapper.Map<CollectibleDto>(collectible);
         }
 
-        public void UpdateColletctible(int id, Collectible collectible)
+        public async Task UpdateColletctibleAsync(int id, CollectibleDto collectible)
         {
             collectible.Id = id;
-            _dbContext.Update(collectible);
-            _dbContext.SaveChanges();
+
+            _dbContext.Update(_mapper.Map<CollectibleDto>(collectible));
+            await _dbContext.SaveChangesAsync();
         }
 
-        public void DeleteCollectible(int id)
+        public async Task DeleteCollectibleAsync(int id)
         {
-            var collectible= GetCollectible(id);
+            var collectible = GetCollectibleAsync(id);
+            var mappedCollectible = _mapper.Map<Collectible>(collectible);
 
-            _dbContext.Collection.Remove(collectible);
-            _dbContext.SaveChanges();
+            _dbContext.Collection.Remove(mappedCollectible);
+            await _dbContext.SaveChangesAsync();
         }
 
-        public IEnumerable<Collectible> GetCollectiblesForSale()
+        public async Task<IEnumerable<CollectibleDto>> GetCollectiblesForSaleAsync()
         {
-            var list = _dbContext.Collection.Where(w => w.ForSale == true).ToList();
-            return list;
+            var list = await _dbContext.Collection.Where(w => w.ForSale == true).ToListAsync();
+            return _mapper.Map<IEnumerable<CollectibleDto>>(list);
         }
     }
 }

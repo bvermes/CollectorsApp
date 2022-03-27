@@ -1,6 +1,8 @@
 ﻿using CollectorsApp.BLL.Interfaces;
 using CollectorsApp.DAL.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
+using CollectorsApp.BLL.DataTransferObjects;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,47 +13,75 @@ namespace CollectorsApp.API.Controllers
     public class CollectionController : ControllerBase
     {
         private readonly ICollectibleService _collectibleService;
-        public CollectionController(ICollectibleService collectibleService)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public CollectionController(ICollectibleService collectibleService, IWebHostEnvironment webHostEnvironment)
         {
             _collectibleService = collectibleService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: api/<CollectionController>
         [HttpGet]
-        public IEnumerable<Collectible> GetForSale()
+        public async Task<ActionResult<IEnumerable<CollectibleDto>>> GetForSale()
         {
-            return _collectibleService.GetCollectibles();
+            return (await _collectibleService.GetCollectiblesAsync()).ToList();
         }
 
-        [HttpGet("ForSale")]
-        public IEnumerable<Collectible> Get()
+        [HttpGet("for-sale")]
+        public async Task<ActionResult<IEnumerable<CollectibleDto>>> Get()
         {
-            return _collectibleService.GetCollectiblesForSale();
+            return (await _collectibleService.GetCollectiblesForSaleAsync()).ToList();
         }
 
         [HttpGet("{id}")]
-        public Collectible Get(int id)
+        public async Task<ActionResult<CollectibleDto>> Get(int id)
         {
-            return _collectibleService.GetCollectible(id);
+            return await _collectibleService.GetCollectibleAsync(id);
         }
 
         // POST api/<CollectionController>
         [HttpPost]
-        public void Post([FromBody] Collectible collectible)
+        public async Task<IActionResult> Post([FromBody] CollectibleDto collectible)
         {
-            _collectibleService.AddCollectible(collectible);
+            await _collectibleService.AddCollectibleAsync(collectible);
+            return NoContent();
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Collectible collectible)
+        public async Task<IActionResult> Put(int id, [FromBody] CollectibleDto collectible)
         {
-            _collectibleService.UpdateColletctible(id, collectible);
+            await _collectibleService.UpdateColletctibleAsync(id, collectible);
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            _collectibleService.DeleteCollectible(id);
+            await _collectibleService.DeleteCollectibleAsync(id);
+            return NoContent();
+        }
+
+        [HttpPost("SaveFile")]
+        public JsonResult SaveFile()
+        {
+            try
+            {
+                var httpRequest = Request.Form;
+                var postedFile = httpRequest.Files[0];
+                string filename = postedFile.FileName;
+                var physicalPath = _webHostEnvironment.ContentRootPath + "/Photos/" + filename;
+
+                using (var stream = new FileStream(physicalPath, FileMode.Create))
+                {
+                    postedFile.CopyTo(stream);
+                }
+
+                return new JsonResult(filename);
+            }
+            catch (Exception)
+            {
+                return new JsonResult("anonymous.png");
+            }
         }
     }
 }

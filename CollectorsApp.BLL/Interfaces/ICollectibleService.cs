@@ -1,4 +1,5 @@
-﻿using CollectorsApp.DAL.Entities;
+﻿using CollectorsApp.BLL.DataTransferObjects;
+using CollectorsApp.DAL.Entities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,11 +11,13 @@ namespace CollectorsApp.BLL.Interfaces
 {
     public interface ICollectibleService
     {
-        IEnumerable<Collectible> GetCollectibles();
-        IEnumerable<Collectible> GetCollectiblesForSale();
-        Collectible GetCollectible(int id);
-        void AddCollectible(Collectible collectible);
-        void UpdateColletctible(int id, Collectible collectible);
-        void DeleteCollectible(int id);
+        Task<IEnumerable<CollectibleDto>> GetCollectiblesAsync();
+        Task<IEnumerable<CollectibleDto>> GetCollectiblesForSaleAsync();
+        Task<CollectibleDto> GetCollectibleAsync(int id);
+        Task AddCollectibleAsync(CollectibleDto collectible);
+        Task UpdateColletctibleAsync(int id, CollectibleDto collectible);
+        Task DeleteCollectibleAsync(int id);
+        
+
     }
 }

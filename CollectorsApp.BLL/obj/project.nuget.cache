@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "tjtr9X5Wzhxkw3DfxLABMRe3qhxcTBLTI7svqbwt3Fz+wvM/3IJRywx6gmM81DQ8f+5iII+GxSLjheooK5/+8g==",
+  "dgSpecHash": "NMTVVfD26VZt8n4ntNc8rB04oP5tozDyxmQIa35KyHVRRS90+0lYj/daQa173UERjpuJBHhwlXpKbPAk5DgZSQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Balazs\\source\\repos\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Balazs\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.3\\microsoft.aspnetcore.cryptography.internal.6.0.3.nupkg.sha512",
     "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.3\\microsoft.aspnetcore.cryptography.keyderivation.6.0.3.nupkg.sha512",
     "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.3\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.3.nupkg.sha512",
-    "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",

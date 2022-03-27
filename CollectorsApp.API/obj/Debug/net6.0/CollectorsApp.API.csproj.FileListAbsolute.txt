@@ -66,3 +66,6 @@ C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Co
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\CollectorsApp.DAL.dll
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\CollectorsApp.BLL.pdb
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\CollectorsApp.DAL.pdb
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Hellang.Middleware.ProblemDetails.dll
