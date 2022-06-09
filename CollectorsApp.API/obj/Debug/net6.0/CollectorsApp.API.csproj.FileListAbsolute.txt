@@ -16,9 +16,6 @@ C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\Co
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.API.csproj.CoreCompileInputs.cache
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\scopedcss\bundle\CollectorsApp.API.styles.css
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.API.csproj.CopyComplete
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.API.dll
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\refint\CollectorsApp.API.dll
@@ -69,3 +66,17 @@ C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Co
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Hellang.Middleware.ProblemDetails.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.API.RazorAssemblyInfo.cache
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.API.RazorAssemblyInfo.cs
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

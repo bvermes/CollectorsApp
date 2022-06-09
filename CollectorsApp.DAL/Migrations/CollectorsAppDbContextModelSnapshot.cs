@@ -17,7 +17,7 @@ namespace CollectorsApp.DAL.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.3")
+                .HasAnnotation("ProductVersion", "6.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -36,9 +36,19 @@ namespace CollectorsApp.DAL.Migrations
                     b.Property<bool>("ForSale")
                         .HasColumnType("bit");
 
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SellingPrice")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Sold")
+                        .HasColumnType("bit");
 
                     b.Property<int>("Value")
                         .HasColumnType("int");

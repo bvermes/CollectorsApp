@@ -14,6 +14,7 @@ namespace CollectorsApp.BLL.Profiles
         public CollectibleProfile()
         {
             CreateMap<CollectibleDto, Collectible>()
+                .ForMember(dest => dest.Id, m => m.Ignore())
                 .ForMember(dest => dest.Name, m => m.MapFrom(src => src.Name))
                 .ReverseMap();
         }
