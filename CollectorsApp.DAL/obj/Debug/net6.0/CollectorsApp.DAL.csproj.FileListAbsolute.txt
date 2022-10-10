@@ -12,3 +12,17 @@ C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\re
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.pdb
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.genruntimeconfig.cache
 C:\Users\Balazs\source\repos\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\ref\CollectorsApp.DAL.dll
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\bin\Debug\net6.0\CollectorsApp.DAL.deps.json
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\bin\Debug\net6.0\CollectorsApp.DAL.runtimeconfig.json
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\bin\Debug\net6.0\CollectorsApp.DAL.dll
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\bin\Debug\net6.0\CollectorsApp.DAL.pdb
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.csproj.AssemblyReference.cache
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.AssemblyInfoInputs.cache
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.AssemblyInfo.cs
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.csproj.CoreCompileInputs.cache
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.dll
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\refint\CollectorsApp.DAL.dll
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.pdb
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\CollectorsApp.DAL.genruntimeconfig.cache
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.DAL\obj\Debug\net6.0\ref\CollectorsApp.DAL.dll

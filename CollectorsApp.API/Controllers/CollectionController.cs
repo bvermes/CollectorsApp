@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
+using System.Diagnostics;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -113,6 +114,48 @@ namespace CollectorsApp.API.Controllers
             var imagePath = Path.Combine(_webHostEnvironment.ContentRootPath, "Images", imageName);
             if (System.IO.File.Exists(imagePath))
                 System.IO.File.Delete(imagePath);
+        }
+
+        /*[HttpGet]
+        public List<int> GetModelResults ()
+        {
+            var modelResults = new List<int>();
+            modelResults.Add(1);
+            modelResults.Add(1);
+            modelResults.Add(2);
+            return modelResults;
+        }*/
+
+        [NonAction]
+        public void ExecProcess()
+        {
+            var psi = new ProcessStartInfo();
+            psi.FileName = @"D:\Program Files\Python\Python310\python.exe";
+
+            var script = "";
+            psi.Arguments = $"\"{script}\"";
+
+            psi.UseShellExecute = false;
+            psi.CreateNoWindow = true;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+
+
+            var error = "";
+            var results = "";
+
+
+            using(var process = Process.Start(psi))
+            {
+                error = process.StandardError.ReadToEnd();
+                results = process.StandardOutput.ReadToEnd();
+            }
+            Console.WriteLine("Error:");
+            Console.WriteLine(error);
+            Console.WriteLine();
+            Console.WriteLine("Results:");
+            Console.WriteLine(results);
+
         }
     }
 }
