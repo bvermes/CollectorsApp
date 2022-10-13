@@ -16,6 +16,7 @@ var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddDbContext<CollectorsAppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddTransient<ICollectibleService, CollectibleService>();
+builder.Services.AddTransient<ITeamsService, TeamsService>();
 builder.Services.AddAutoMapper(typeof(CollectibleProfile));
 
 builder.Services.AddProblemDetails(options =>
