@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj": {}
+    "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj": {
+    "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj",
+        "projectUniqueName": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj",
         "projectName": "CollectorsApp.BLL",
-        "projectPath": "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj",
-        "packagesPath": "C:\\Users\\Balazs\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.BLL\\obj\\",
+        "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj",
+        "packagesPath": "C:\\Users\\Balázs\\.nuget\\packages\\",
+        "outputPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Balazs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Balázs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj": {
-                "projectPath": "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj"
+              "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj": {
+                "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj"
               }
             }
           }
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,21 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj": {
+    "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj",
+        "projectUniqueName": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj",
         "projectName": "CollectorsApp.DAL",
-        "projectPath": "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj",
-        "packagesPath": "C:\\Users\\Balazs\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\App\\CollectorsApp\\CollectorsApp.DAL\\obj\\",
+        "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj",
+        "packagesPath": "C:\\Users\\Balázs\\.nuget\\packages\\",
+        "outputPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Balazs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Balázs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -133,7 +134,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -142,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

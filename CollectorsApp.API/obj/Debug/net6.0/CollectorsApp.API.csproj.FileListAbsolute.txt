@@ -245,3 +245,4 @@ D:\Desktop\App\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.AP
 D:\Desktop\App\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\CollectorsApp.API.genruntimeconfig.cache
 D:\Desktop\App\CollectorsApp\CollectorsApp.API\obj\Debug\net6.0\ref\CollectorsApp.API.dll
 D:\Desktop\App\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
