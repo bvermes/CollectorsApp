@@ -116,46 +116,8 @@ namespace CollectorsApp.API.Controllers
                 System.IO.File.Delete(imagePath);
         }
 
-        /*[HttpGet]
-        public List<int> GetModelResults ()
-        {
-            var modelResults = new List<int>();
-            modelResults.Add(1);
-            modelResults.Add(1);
-            modelResults.Add(2);
-            return modelResults;
-        }*/
-
-        [NonAction]
-        public void ExecProcess()
-        {
-            var psi = new ProcessStartInfo();
-            psi.FileName = @"D:\Program Files\Python\Python310\python.exe";
-
-            var script = "";
-            psi.Arguments = $"\"{script}\"";
-
-            psi.UseShellExecute = false;
-            psi.CreateNoWindow = true;
-            psi.RedirectStandardOutput = true;
-            psi.RedirectStandardError = true;
 
 
-            var error = "";
-            var results = "";
 
-
-            using(var process = Process.Start(psi))
-            {
-                error = process.StandardError.ReadToEnd();
-                results = process.StandardOutput.ReadToEnd();
-            }
-            Console.WriteLine("Error:");
-            Console.WriteLine(error);
-            Console.WriteLine();
-            Console.WriteLine("Results:");
-            Console.WriteLine(results);
-
-        }
     }
 }

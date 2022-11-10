@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CollectorsApp.DAL.Migrations
 {
     [DbContext(typeof(CollectorsAppDbContext))]
-    [Migration("20221013091843_Init")]
+    [Migration("20221031151003_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

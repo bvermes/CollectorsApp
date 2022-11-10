@@ -10,11 +10,11 @@
         "projectUniqueName": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj",
         "projectName": "CollectorsApp.BLL",
         "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj",
-        "packagesPath": "C:\\Users\\Balázs\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Balazs\\.nuget\\packages\\",
         "outputPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Balázs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Balazs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,11 +75,11 @@
         "projectUniqueName": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj",
         "projectName": "CollectorsApp.DAL",
         "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj",
-        "packagesPath": "C:\\Users\\Balázs\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Balazs\\.nuget\\packages\\",
         "outputPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Balázs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Balazs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

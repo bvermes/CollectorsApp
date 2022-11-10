@@ -9951,7 +9951,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Balázs\\.nuget\\packages\\": {}
+    "C:\\Users\\Balazs\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -9959,11 +9959,11 @@
       "projectUniqueName": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.API\\CollectorsApp.API.csproj",
       "projectName": "CollectorsApp.API",
       "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.API\\CollectorsApp.API.csproj",
-      "packagesPath": "C:\\Users\\Balázs\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Balazs\\.nuget\\packages\\",
       "outputPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Balázs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Balazs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

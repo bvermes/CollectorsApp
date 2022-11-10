@@ -22,12 +22,13 @@ namespace CollectorsApp.BLL.Services
             _dbContext = dbContext;
             _mapper = mapper;
         }
+
         public async Task<IEnumerable<CollectibleDto>> GetCollectiblesAsync()
         {
             var collectibles = await _dbContext.Collection.ToListAsync();
-
             return _mapper.Map<IEnumerable<CollectibleDto>>(collectibles);
         }
+
         public async Task AddCollectibleAsync(CollectibleDto collectible)
         {
             var mappedCollectible = _mapper.Map<Collectible>(collectible);
