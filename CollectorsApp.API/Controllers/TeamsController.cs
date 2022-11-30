@@ -58,18 +58,60 @@ namespace CollectorsApp.API.Controllers
         }
 
         [NonAction]
-        static string Option1_ExecProcess()
+        /*static string Option1_ExecProcess()
         {
             // 1) Create Process Info
             var psi = new ProcessStartInfo();
-            psi.FileName = @"D:\Program Files\Python\Python310\python.exe";
+            psi.FileName = @"E:\ProgramData\Anaconda3\python.exe";
 
             // 2) Provide script and arguments
             var script = @"E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.API\model\DaysBetweenDates.py";
             var start = "2019-1-1";
             var end = "2019-1-22";
-
+            //DaysBetweenDates
+            //scrpit
+            //psi.Arguments = $"\"{script}\" \"{3}\" \"{3}\" \"{3}\" \"{"Valencia CF"}\" \"{"Real Sociedad"}\"";
             psi.Arguments = $"\"{script}\" \"{start}\" \"{end}\"";
+
+            // 3) Process configuration
+            psi.UseShellExecute = false;
+            psi.CreateNoWindow = true;
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+
+            // 4) Execute process and get output
+            var errors = "";
+            var results = "";
+
+            using (var process = Process.Start(psi))
+            {
+                errors = process.StandardError.ReadToEnd();
+                results = process.StandardOutput.ReadToEnd();
+            }
+
+            // 5) Display output
+            Console.WriteLine("ERRORS:");
+            Console.WriteLine(errors);
+            Console.WriteLine();
+            Console.WriteLine("Results:");
+            Console.WriteLine(results);
+            return results;
+        }*/
+        static string Option1_ExecProcess()
+        {
+            // 1) Create Process Info
+            var psi = new ProcessStartInfo();
+            psi.FileName = @"E:\Programs\Python\Python310\python.exe";
+
+            // 2) Provide script and arguments
+            var script = @"E:\Desktop\Onlab2\CollectorsApp\CollectorsApp\CollectorsApp.API\model\script.py";
+            var start = "2019-1-1";
+            var end = "2019-1-22";
+
+            //DaysBetweenDates
+            //scrpit
+            //psi.Arguments = $"\"{script}\" \"{start}\" \"{end}\"";
+            psi.Arguments = $"\"{script}\" \"{3}\" \"{3}\" \"{3}\" \"{"Valencia CF"}\" \"{"Real Sociedad"}\"";
 
             // 3) Process configuration
             psi.UseShellExecute = false;

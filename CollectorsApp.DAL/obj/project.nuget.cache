@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/EqYGieChuzC3ANA/8q+a4q5hgsclx0fCbv4Id+AQpb4UQ0zLjyb9qjvE75IBnRtH+z8eE/7yAtIDIt6ZdEAYg==",
+  "dgSpecHash": "Qu1CG5ucuVl50tcaLEIRyLCc2oUfyATkGE73zWi8C9xXBkz9NLmWQTBPSafDqIVuFinVJk8+ldkctaw9ZwM6Yg==",
   "success": true,
-  "projectFilePath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj",
+  "projectFilePath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Balazs\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Balazs\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",

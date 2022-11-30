@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7gLRsfDZMxQeYc2tx38ij+wgd2J0ZJ8U1RXoYqRfO4BkyEoDQApzgfdBqyhFCpoDLPXAtNPA2jsFm5AdHeaVDg==",
+  "dgSpecHash": "nodcD3ogobrBDBSoKlfgmbCTbBvb3Ok+HhPEMByiuyZEh3z/bFkgRk2brhvVUPeV4IfTZ4T3Tw8CDQLm0Z8BKw==",
   "success": true,
-  "projectFilePath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.API\\CollectorsApp.API.csproj",
+  "projectFilePath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.API\\CollectorsApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Balazs\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Balazs\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

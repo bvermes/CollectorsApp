@@ -9951,19 +9951,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Balazs\\.nuget\\packages\\": {}
+    "C:\\Users\\Balazs\\.nuget\\packages\\": {},
+    "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.API\\CollectorsApp.API.csproj",
+      "projectUniqueName": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.API\\CollectorsApp.API.csproj",
       "projectName": "CollectorsApp.API",
-      "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.API\\CollectorsApp.API.csproj",
+      "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.API\\CollectorsApp.API.csproj",
       "packagesPath": "C:\\Users\\Balazs\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.API\\obj\\",
+      "outputPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Balazs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9977,11 +9982,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj": {
-              "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj"
+            "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj": {
+              "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.BLL\\CollectorsApp.BLL.csproj"
             },
-            "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj": {
-              "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj"
+            "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj": {
+              "projectPath": "E:\\Desktop\\Onlab2\\CollectorsApp\\CollectorsApp\\CollectorsApp.DAL\\CollectorsApp.DAL.csproj"
             }
           }
         }
@@ -10054,7 +10059,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
