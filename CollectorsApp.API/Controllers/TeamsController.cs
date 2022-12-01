@@ -3,7 +3,9 @@ using CollectorsApp.BLL.Interfaces;
 using CollectorsApp.DAL.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Globalization;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,10 +30,10 @@ namespace CollectorsApp.API.Controllers
             return (await _teamsService.GetTeamsAsync()).ToList();
         }
         
-        [HttpGet("modelresults")]
-        public string GetModelResults()
+        [HttpPost("modelresults")]
+        public MatchItem GetModelResults([FromBody] MatchItemDto match)
         {
-            var modelResults = Option1_ExecProcess();
+            var modelResults =  Option1_ExecProcess(match);
             return modelResults;
         }
 
@@ -58,46 +60,7 @@ namespace CollectorsApp.API.Controllers
         }
 
         [NonAction]
-        /*static string Option1_ExecProcess()
-        {
-            // 1) Create Process Info
-            var psi = new ProcessStartInfo();
-            psi.FileName = @"E:\ProgramData\Anaconda3\python.exe";
-
-            // 2) Provide script and arguments
-            var script = @"E:\Desktop\Onlab2\CollectorsApp\CollectorsApp.API\model\DaysBetweenDates.py";
-            var start = "2019-1-1";
-            var end = "2019-1-22";
-            //DaysBetweenDates
-            //scrpit
-            //psi.Arguments = $"\"{script}\" \"{3}\" \"{3}\" \"{3}\" \"{"Valencia CF"}\" \"{"Real Sociedad"}\"";
-            psi.Arguments = $"\"{script}\" \"{start}\" \"{end}\"";
-
-            // 3) Process configuration
-            psi.UseShellExecute = false;
-            psi.CreateNoWindow = true;
-            psi.RedirectStandardOutput = true;
-            psi.RedirectStandardError = true;
-
-            // 4) Execute process and get output
-            var errors = "";
-            var results = "";
-
-            using (var process = Process.Start(psi))
-            {
-                errors = process.StandardError.ReadToEnd();
-                results = process.StandardOutput.ReadToEnd();
-            }
-
-            // 5) Display output
-            Console.WriteLine("ERRORS:");
-            Console.WriteLine(errors);
-            Console.WriteLine();
-            Console.WriteLine("Results:");
-            Console.WriteLine(results);
-            return results;
-        }*/
-        static string Option1_ExecProcess()
+        static MatchItem Option1_ExecProcess(MatchItemDto match)
         {
             // 1) Create Process Info
             var psi = new ProcessStartInfo();
@@ -105,13 +68,13 @@ namespace CollectorsApp.API.Controllers
 
             // 2) Provide script and arguments
             var script = @"E:\Desktop\Onlab2\CollectorsApp\CollectorsApp\CollectorsApp.API\model\script.py";
-            var start = "2019-1-1";
-            var end = "2019-1-22";
+            //var start = "2019-1-1";
+            //var end = "2019-1-22";
 
             //DaysBetweenDates
             //scrpit
             //psi.Arguments = $"\"{script}\" \"{start}\" \"{end}\"";
-            psi.Arguments = $"\"{script}\" \"{3}\" \"{3}\" \"{3}\" \"{"Valencia CF"}\" \"{"Real Sociedad"}\"";
+            psi.Arguments = $"\"{script}\" \"{match.HomeBetOdds}\" \"{match.DrawBetOdds}\" \"{match.GuestBetOdds}\" \"{match.HomeTeamName}\" \"{match.GuestTeamName}\"";
 
             // 3) Process configuration
             psi.UseShellExecute = false;
@@ -132,10 +95,34 @@ namespace CollectorsApp.API.Controllers
             // 5) Display output
             Console.WriteLine("ERRORS:");
             Console.WriteLine(errors);
-            Console.WriteLine();
-            Console.WriteLine("Results:");
-            Console.WriteLine(results);
-            return results;
+            string[] words = results.Split('\n');
+            NumberFormatInfo provider = new NumberFormatInfo();
+            provider.NumberDecimalSeparator = ".";
+
+            double homeodds = Convert.ToDouble(words[3].Substring(0, 5), provider);
+            double drawodds = Convert.ToDouble(words[4].Substring(0, 5), provider);
+            double awayodds = Convert.ToDouble(words[5].Substring(0, 5), provider);
+            /*double homeo = Convert.ToDouble(words[4].Substring(0, 4));/*
+            double homeodds;
+            if (Double.TryParse(words[4].Substring(0, 4), out homeodds))
+            {
+                homeo = homeodds;
+            }
+            else
+            {
+                homeo = 0;
+            }
+            //.Replace(" ", String.Empty)
+            //Double.TryParse(homeoraw, out homeodds);
+            Console.WriteLine($"<{words[4].Substring(0, 4)}>");
+            //Console.WriteLine($"<{homeo}>");
+            Console.WriteLine($"<{harom}>");*/
+            Console.WriteLine($"<{homeodds}>");
+            Console.WriteLine($"<{drawodds}>");
+            Console.WriteLine($"<{awayodds}>");
+            MatchItem matresults = new MatchItem(match.HomeTeamName, match.GuestTeamName, homeodds, drawodds, awayodds);
+            return matresults;
         }
+
     }
 }
