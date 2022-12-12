@@ -76,7 +76,7 @@ awayodds = final[len(X) - 1][2]
 rethomeodds= correctodds(homeodds,drawodds,awayodds, homeodds)
 retdrawodds= correctodds(homeodds,drawodds,awayodds, drawodds)
 retawayodds= correctodds(homeodds,drawodds,awayodds, awayodds)
-print(rethomeodds)
-print(retdrawodds)
-print(retawayodds)
+print("homeodds=",rethomeodds)
+print("drawodds=",retdrawodds)
+print("awayodds=",retawayodds)
 
